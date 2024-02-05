@@ -46,8 +46,8 @@ options = {
     "nameTextStyle": {
       "align": 'right',
       "verticalAlign": 'top',
-      "padding": [30, 0, 0, 0],
-    },
+      "padding": [30, 0, 0, 0]
+    }},
     "yAxis": {"type": "value",
       "name": "Fidelity",
       "position": "bottom"
