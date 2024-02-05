@@ -4,8 +4,13 @@ Created on Wed Jan 31 12:19:51 2024
 
 @author: HadrianBezuidenhout
 """
+import pandas as pd
+import numpy as np
+import streamlit as st
+from streamlit import st_echarts
+
 def load_data():
-    df = pandas.read_csv("QPT_Results.csv",sep=";")
+    df = pd.read_csv("QPT_Results.csv",sep=";")
     data = df.groupby('Dimension') # Groups data for processing
     return data
 
@@ -20,7 +25,7 @@ yline_2D = data.get_group(2)["Fidelity"]
 yline_4D = data.get_group(4)["Fidelity"]
 yline_8D = data.get_group(8)["Fidelity"]
 
-fidelity = numpy.array([yline_2D,yline_4D,yline_8D])
+fidelity = np.array([yline_2D,yline_4D,yline_8D])
 
 options = {
     "title": {"text": "Unitary Matrix Fidelity"},
@@ -56,10 +61,10 @@ options = {
     ],
 }
 
-streamlit.title('Unitary Matrix Fidelity')
-streamlit.write('This displays the fidelity of Unitary matrices that were solved for using an optical random walk procedure.')
+st.title('Unitary Matrix Fidelity')
+st.write('This displays the fidelity of Unitary matrices that were solved for using an optical random walk procedure.')
 
-streamlit.subheader('Fidelity Plot')
+st.subheader('Fidelity Plot')
 
 events = {
     "click": "function(params) { console.log(params.name); return params.name }",
@@ -67,7 +72,7 @@ events = {
 }
 
 value = st_echarts(options=options, events=events)
-streamlit.write(value)  # shows name on bar click and type+name+value on bar double click
+st.write(value)  # shows name on bar click and type+name+value on bar double click
 
 
 
