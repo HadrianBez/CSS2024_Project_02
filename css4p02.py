@@ -41,6 +41,7 @@ options = {
         "type": "category",
         "boundaryGap": False,
         "data": xline,
+       "title": "Run Number"
     },
     "yAxis": {"type": "value"},
     "series": [
@@ -49,6 +50,7 @@ options = {
             "type": "line",
             "stack": "1",
             "data": fidelity[0,:].tolist(),
+           "title": "Fidelity"
         },
         {
             "name": "4D",
