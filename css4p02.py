@@ -43,7 +43,6 @@ options = {
         "type": "category",
         "boundaryGap": False,
         "data": xline,
-       "x": "Run Number"
     },
     "yAxis": {"type": "value"},
     "series": [
