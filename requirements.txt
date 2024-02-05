@@ -1,5 +1,5 @@
-import streamlit as st
-from streamlit import st_echarts
+streamlit
+streamlit-st_echarts
 
-import pandas as pd
-import numpy as np
+pandas
+numpy
