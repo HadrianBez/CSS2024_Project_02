@@ -81,10 +81,7 @@ options = {
 }
 
 st.title('Unitary Matrix Fidelity')
-st.write('This plot displays the fidelity of Unitary matrices that were solved experimentally using an optical random walk procedure. The fidelity is shown on the y-axis whilst the number of the test run is shown in the x-axis.')
-
-st.subheader('Fidelity Plot')
-
+st.write('This plot displays the fidelity of Unitary matrices that were solved experimentally using an optical random walk procedure. These unitary matrices are used to cancel noise in a signal and the fidelities are therefore computed using a matrix that would theoretical cancel the noise como=pletely.')
 events = {
     "click": "function(params) { console.log(params.name); return params.name }",
     "dblclick":"function(params) { return [params.type, params.name, params.value] }"
