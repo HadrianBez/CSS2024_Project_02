@@ -5,12 +5,8 @@ Created on Wed Jan 31 12:19:51 2024
 @author: HadrianBezuidenhout
 """
 def load_data():
-    # Create a text element and let the reader know the data is loading.
-    data_load_state = streamlit.text('Loading data...')
     df = pandas.read_csv("QPT_Results.csv",sep=";")
     data = df.groupby('Dimension') # Groups data for processing
-    # Notify the reader that the data was successfully loaded.
-    data_load_state.text("Done! (using st.cache_data)")
     return data
 
 data = load_data()
