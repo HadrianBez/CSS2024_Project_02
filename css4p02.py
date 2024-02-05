@@ -69,7 +69,7 @@ options = {
 }
 
 st.title('Unitary Matrix Fidelity')
-st.write('This displays the fidelity of Unitary matrices that were solved for using an optical random walk procedure.')
+st.write('This plot displays the fidelity of Unitary matrices that were solved experimentally using an optical random walk procedure. The fidelity is shown on the y-axis whilst the number of the test run is shown in the x-axis.')
 
 st.subheader('Fidelity Plot')
 
@@ -78,10 +78,14 @@ events = {
     "dblclick":"function(params) { return [params.type, params.name, params.value] }"
 }
 
-value = st_echarts(options=options,x="Run", events=events)
+value = st_echarts(options=options, events=events)
 st.write(value)  # shows name on bar click and type+name+value on bar double click
 
+df_melted = pd.melt(fidelity)
+c = alt.Chart(df_melted, title='measure of different elements over time').mark_line().encode(
+     x='date', y='value', color='parameter')
 
+st.altair_chart(c, use_container_width=True)
 
 
 
