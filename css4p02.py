@@ -47,7 +47,7 @@ options = {
        "nameTextStyle": {
       "align": 'right',
       "verticalAlign": 'top',
-      "fontWeight": 'bolder'
+      "fontWeight": 'bolder';
       "padding": [20, 275, 0, 0]
     }},
     "yAxis": {"type": "value",
