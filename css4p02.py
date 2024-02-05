@@ -10,8 +10,12 @@ import streamlit as st
 from streamlit import st_echarts
 
 def load_data():
+   # Create a text element and let the reader know the data is loading.
+    data_load_state = st.text('Loading data...')
     df = pd.read_csv("QPT_Results.csv",sep=";")
     data = df.groupby('Dimension') # Groups data for processing
+    # Notify the reader that the data was successfully loaded.
+    data_load_state.text("Done! (using st.cache_data)")
     return data
 
 data = load_data()
