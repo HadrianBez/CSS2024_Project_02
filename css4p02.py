@@ -44,7 +44,7 @@ options = {
         "data": xline,
         "name": "Run Number"
     },
-    "yAxis": {"type": "value", axisLabel: {
+    "yAxis": {"type": "value", "axisLabel": {
       "name": "Fidelity",
       "align": "center"
     }},
