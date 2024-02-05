@@ -48,7 +48,7 @@ options = {
       "align": 'right',
       "verticalAlign": 'top',
       "fontWeight": 'bolder',
-      "padding": [20, 275, 0, 0]
+      "padding": [20, 280, 0, 0]
     }},
     "yAxis": {"type": "value",
       "name": "Fidelity",
