@@ -15,7 +15,7 @@ def load_data():
     df = pd.read_csv("QPT_Results.csv",sep=";")
     data = df.groupby('Dimension') # Groups data for processing
     # Notify the reader that the data was successfully loaded.
-    data_load_state.text("Done! (using st.cache_data)")
+    data_load_state.text("Finished loading data! (using st.cache_data)")
     return data
 
 data = load_data()
