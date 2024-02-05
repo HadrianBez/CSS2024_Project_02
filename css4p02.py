@@ -6,8 +6,8 @@ Created on Wed Jan 31 12:19:51 2024
 """
 def load_data():
     # Create a text element and let the reader know the data is loading.
-    data_load_state = st.text('Loading data...')
-    df = pd.read_csv("QPT_Results.csv",sep=";")
+    data_load_state = streamlit.text('Loading data...')
+    df = pandas.read_csv("QPT_Results.csv",sep=";")
     data = df.groupby('Dimension') # Groups data for processing
     # Notify the reader that the data was successfully loaded.
     data_load_state.text("Done! (using st.cache_data)")
@@ -24,7 +24,7 @@ yline_2D = data.get_group(2)["Fidelity"]
 yline_4D = data.get_group(4)["Fidelity"]
 yline_8D = data.get_group(8)["Fidelity"]
 
-fidelity = np.array([yline_2D,yline_4D,yline_8D])
+fidelity = numpy.array([yline_2D,yline_4D,yline_8D])
 
 options = {
     "title": {"text": "Unitary Matrix Fidelity"},
@@ -60,10 +60,10 @@ options = {
     ],
 }
 
-st.title('Unitary Matrix Fidelity')
-st.write('This displays the fidelity of Unitary matrices that were solved for using an optical random walk procedure.')
+streamlit.title('Unitary Matrix Fidelity')
+streamlit.write('This displays the fidelity of Unitary matrices that were solved for using an optical random walk procedure.')
 
-st.subheader('Fidelity Plot')
+streamlit.subheader('Fidelity Plot')
 
 events = {
     "click": "function(params) { console.log(params.name); return params.name }",
@@ -71,7 +71,7 @@ events = {
 }
 
 value = st_echarts(options=options, events=events)
-st.write(value)  # shows name on bar click and type+name+value on bar double click
+streamlit.write(value)  # shows name on bar click and type+name+value on bar double click
 
 
 
