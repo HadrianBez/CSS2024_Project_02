@@ -36,6 +36,8 @@ options = {
     "tooltip": {"trigger": "axis"},
     "legend": {"data": ["2D", "4D", "8D"]},
     "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": True},
+      "y": "Fidelity",
+      "x": "Run Number",
     "toolbox": {"feature": {"saveAsImage": {}}},
     "xAxis": {
         "type": "category",
@@ -50,7 +52,6 @@ options = {
             "type": "line",
             "stack": "1",
             "data": fidelity[0,:].tolist(),
-           "y": "Fidelity"
         },
         {
             "name": "4D",
