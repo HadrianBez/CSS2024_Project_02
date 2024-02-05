@@ -65,7 +65,7 @@ options = {
             "data": fidelity[2,:].tolist(),
         },
     ],
-   x= "date", y = "temp_max"
+   "x"= "date", "y" = "temp_max"
 }
 
 st.title('Unitary Matrix Fidelity')
@@ -78,7 +78,7 @@ events = {
     "dblclick":"function(params) { return [params.type, params.name, params.value] }"
 }
 
-value = st_echarts(options=options, events=events).mark_line().encode(x='date', y='value')
+value = st_echarts(options=options, events=events)
 st.write(value)  # shows name on bar click and type+name+value on bar double click
 
 
