@@ -7,7 +7,7 @@ Created on Wed Jan 31 12:19:51 2024
 import pandas as pd
 import numpy as np
 import streamlit as st
-from streamlit import st_echarts
+import st_echarts
 
 def load_data():
    # Create a text element and let the reader know the data is loading.
