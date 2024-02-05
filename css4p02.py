@@ -51,6 +51,12 @@ options = {
     }},
     "yAxis": {"type": "value",
       "name": "Fidelity",
+      "nameGap": 35,
+      "nameLocation": 'end',
+      "nameTextStyle": {
+      "color": '#f00',
+      "fontWeight": 'bolder',
+      "align": 'right'
     },
     "series": [
         {
