@@ -47,14 +47,14 @@ options = {
        "nameTextStyle": {
       "align": 'right',
       "verticalAlign": 'top',
+      "fontWeight": 'bolder'
       "padding": [20, 275, 0, 0]
     }},
     "yAxis": {"type": "value",
       "name": "Fidelity",
-      "nameGap": 35,
+      "nameGap": 15,
       "nameLocation": 'end',
       "nameTextStyle": {
-      "color": '#f00',
       "fontWeight": 'bolder',
       "align": 'right'
     }},
