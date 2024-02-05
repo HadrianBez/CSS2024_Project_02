@@ -38,13 +38,13 @@ options = {
     "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": True},
     "toolbox": {"feature": {"saveAsImage": {}}},
     "xAxis": {
-        "type": "category",
-        "boundaryGap": False,
-        "data": xline,
-        "name": "Run Number",
-       "nameLocation": 'end',
-       "nameGap": 0,
-       "nameTextStyle": {
+      "type": "category",
+      "boundaryGap": False,
+      "data": xline,
+      "name": "Run Number",
+      "nameLocation": 'end',
+      "nameGap": 0,
+      "nameTextStyle": {
       "align": 'right',
       "verticalAlign": 'top',
       "fontWeight": 'bolder',
