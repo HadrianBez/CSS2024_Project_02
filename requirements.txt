@@ -1,3 +1,4 @@
 streamlit
+st_echarts
 pandas
 numpy
