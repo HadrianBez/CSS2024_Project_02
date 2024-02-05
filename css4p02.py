@@ -44,10 +44,10 @@ options = {
         "data": xline,
         "name": "Run Number"
     },
-    "yAxis": {"type": "value", "axisLabel": {
+    "yAxis": {"type": "value",
       "name": "Fidelity",
       "align": "center"
-    }},
+    },
     "series": [
         {
             "name": "2D",
