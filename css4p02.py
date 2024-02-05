@@ -41,9 +41,10 @@ options = {
         "type": "category",
         "boundaryGap": False,
         "data": xline,
-        "name": "Run Number",nameLocation: 'end',
-    "nameGap": 0,
-    "nameTextStyle": {
+        "name": "Run Number",
+       "nameLocation": 'end',
+       "nameGap": 0,
+       "nameTextStyle": {
       "align": 'right',
       "verticalAlign": 'top',
       "padding": [30, 0, 0, 0]
