@@ -81,7 +81,7 @@ events = {
 value = st_echarts(options=options, events=events)
 st.write(value)  # shows name on bar click and type+name+value on bar double click
 
-df_melted = pd.melt(data, id_vars=['fidelity'],var_name='dimension', value_name='value')
+df_melted = pd.melt(data,var_name='Dimension', value_name='Fidelity')
 c = alt.Chart(df_melted, title='measure of different elements over time').mark_line().encode(
      x='date', y='value', color='parameter')
 
