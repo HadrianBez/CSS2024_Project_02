@@ -44,8 +44,9 @@ options = {
         "type": "category",
         "boundaryGap": False,
         "data": xline,
+        "name": "Run Number"
     },
-    "yAxis": {"type": "value"},
+    "yAxis": {"type": "value", "name": "Fidelity"},
     "series": [
         {
             "name": "2D",
@@ -80,12 +81,6 @@ events = {
 
 value = st_echarts(options=options, events=events)
 st.write(value)  # shows name on bar click and type+name+value on bar double click
-
-c = alt.Chart(value)
-
-st.altair_chart(c, use_container_width=True)
-
-
 
 
 
