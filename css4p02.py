@@ -85,14 +85,7 @@ st.write(value)  # shows name on bar click and type+name+value on bar double cli
 import altair as alt
 
 chart = (
-        alt.Chart(
-            title="Your title",
-        )
-        .mark_line()
-        .encode(
-            x=alt.X("capacity 1", axis=alt.Axis(title="Capacity 1")),
-            y=alt.Y("capacity 2", axis=alt.Axis(title="Capacity 2")),
-        )
+        alt.Chart(options)
 )
 
 st.altair_chart(chart)
