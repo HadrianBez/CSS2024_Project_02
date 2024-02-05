@@ -41,7 +41,7 @@ options = {
         "type": "category",
         "boundaryGap": False,
         "data": xline,
-       "title": "Run Number"
+       "x": "Run Number"
     },
     "yAxis": {"type": "value"},
     "series": [
@@ -50,7 +50,7 @@ options = {
             "type": "line",
             "stack": "1",
             "data": fidelity[0,:].tolist(),
-           "title": "Fidelity"
+           "y": "Fidelity"
         },
         {
             "name": "4D",
@@ -77,7 +77,7 @@ events = {
     "dblclick":"function(params) { return [params.type, params.name, params.value] }"
 }
 
-value = st_echarts(options=options, events=events, x= "Run Number", y = "Fidelity")
+value = st_echarts(options=options, events=events)
 st.write(value)  # shows name on bar click and type+name+value on bar double click
 
 
