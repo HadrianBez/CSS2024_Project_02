@@ -46,7 +46,7 @@ options = {
     },
     "yAxis": {"type": "value",
       "name": "Fidelity",
-      "align": "center"
+      "position": "bottom"
     },
     "series": [
         {
@@ -80,7 +80,7 @@ events = {
     "dblclick":"function(params) { return [params.type, params.name, params.value] }"
 }
 
-value = st_echarts(options=options, height="500px",  width="600px", events=events)
+value = st_echarts(options=options, height="500px", events=events)
 st.write(value)  # shows name on bar click and type+name+value on bar double click
 
 
