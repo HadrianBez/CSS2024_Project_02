@@ -34,8 +34,6 @@ fidelity = np.array([yline_2D,yline_4D,yline_8D])
 
 options = {
     "title": {"text": "Unitary Matrix Fidelity"},
-   "y": "Fidelity",
-   "x": "Run Number",
     "tooltip": {"trigger": "axis"},
     "legend": {"data": ["2D", "4D", "8D"]},
     "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": True},
@@ -46,7 +44,10 @@ options = {
         "data": xline,
         "name": "Run Number"
     },
-    "yAxis": {"type": "value", "name": "Fidelity"},
+    "yAxis": {"type": "value", axisLabel: {
+      "name": "Fidelity",
+      "align": "center"
+    }},
     "series": [
         {
             "name": "2D",
