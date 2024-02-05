@@ -81,7 +81,7 @@ options = {
 }
 
 st.title('Unitary Matrix Fidelity')
-st.write('This plot displays the fidelity of Unitary matrices that were solved experimentally using an optical random walk procedure. These unitary matrices are used to cancel noise in a signal and therefore the fidelities are computed by comparing the experimental matrix with a matrix that would theoretically cancel the noise completely.\n \n The system was tested 20 times for 3 dimensions (2D, 4D and 8D), where the fidelities of each run are plotted below.')
+st.write('This plot displays the fidelities of Unitary matrices that were solved experimentally using an optical random walk procedure. These unitary matrices are used to cancel noise in a signal and therefore the fidelities are computed by comparing the experimental matrix with a matrix that would theoretically cancel the noise completely.\n \n The system was tested 20 times for 3 dimensions (2D, 4D and 8D), and the fidelities of each run are plotted below.')
 events = {
     "click": "function(params) { console.log(params.name); return params.name }",
     "dblclick":"function(params) { return [params.type, params.name, params.value] }"
