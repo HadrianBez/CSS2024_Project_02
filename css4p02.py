@@ -65,7 +65,6 @@ options = {
             "data": fidelity[2,:].tolist(),
         },
     ],
-   "x": "date", "y": "temp_max"
 }
 
 st.title('Unitary Matrix Fidelity')
@@ -80,6 +79,23 @@ events = {
 
 value = st_echarts(options=options, events=events)
 st.write(value)  # shows name on bar click and type+name+value on bar double click
+
+
+import altair as alt
+
+chart = (
+        alt.Chart(
+            data=df,
+            title="Your title",
+        )
+        .mark_line()
+        .encode(
+            x=alt.X("capacity 1", axis=alt.Axis(title="Capacity 1")),
+            x=alt.X("capacity 2", axis=alt.Axis(title="Capacity 2")),
+        )
+)
+
+st.altair_chart(chart)
 
 
 
