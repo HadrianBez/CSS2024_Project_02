@@ -8,7 +8,6 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 from streamlit_echarts import st_echarts
-import altair as alt
 
 def load_data():
    # Create a text element and let the reader know the data is loading.
@@ -42,10 +41,12 @@ options = {
         "type": "category",
         "boundaryGap": False,
         "data": xline,
-        "name": "Run Number",
-       "nameGap": -30,  
-       "nameTextStyle": {
-        "padding": [50,0,0,0]
+        "name": "Run Number",nameLocation: 'end',
+    "nameGap": 0,
+    "nameTextStyle": {
+      "align": 'right',
+      "verticalAlign": 'top',
+      "padding": [30, 0, 0, 0],
     },
     "yAxis": {"type": "value",
       "name": "Fidelity",
