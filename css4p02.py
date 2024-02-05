@@ -77,7 +77,7 @@ events = {
     "dblclick":"function(params) { return [params.type, params.name, params.value] }"
 }
 
-value = st_echarts(options=options, events=events)
+value = st_echarts(options=options, events=events, x= "Run Number", y = "Fidelity")
 st.write(value)  # shows name on bar click and type+name+value on bar double click
 
 
