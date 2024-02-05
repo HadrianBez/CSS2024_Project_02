@@ -85,7 +85,7 @@ import altair as alt
 
 chart = (
         alt.Chart(
-            data=df,
+            data=fidelity,
             title="Your title",
         )
         .mark_line()
