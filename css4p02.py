@@ -65,6 +65,7 @@ options = {
             "data": fidelity[2,:].tolist(),
         },
     ],
+   x= "date", y = "temp_max"
 }
 
 st.title('Unitary Matrix Fidelity')
