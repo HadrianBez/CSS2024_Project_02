@@ -42,7 +42,10 @@ options = {
         "type": "category",
         "boundaryGap": False,
         "data": xline,
-        "name": "Run Number"
+        "name": "Run Number",
+       "nameGap": -30,  
+       "nameTextStyle": {
+        "padding": [50,0,0,0]
     },
     "yAxis": {"type": "value",
       "name": "Fidelity",
