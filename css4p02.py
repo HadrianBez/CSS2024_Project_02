@@ -57,7 +57,7 @@ options = {
       "color": '#f00',
       "fontWeight": 'bolder',
       "align": 'right'
-    }),
+    }},
     "series": [
         {
             "name": "2D",
