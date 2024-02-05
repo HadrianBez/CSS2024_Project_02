@@ -91,7 +91,7 @@ chart = (
         .mark_line()
         .encode(
             x=alt.X("capacity 1", axis=alt.Axis(title="Capacity 1")),
-            x=alt.X("capacity 2", axis=alt.Axis(title="Capacity 2")),
+            y=alt.Y"capacity 2", axis=alt.Axis(title="Capacity 2")),
         )
 )
 
