@@ -85,7 +85,8 @@ st.write(value)  # shows name on bar click and type+name+value on bar double cli
 import altair as alt
 
 chart = (
-        alt.Chart(options)
+        alt.Chart(yline_2D, title='measure of different elements over time').mark_line().encode(
+     x='date', y='value', color='parameter')
 )
 
 st.altair_chart(chart)
