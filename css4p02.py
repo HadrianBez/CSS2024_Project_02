@@ -80,7 +80,7 @@ events = {
     "dblclick":"function(params) { return [params.type, params.name, params.value] }"
 }
 
-value = st_echarts(options=options, events=events)
+value = st_echarts(options=options, height="500px", events=events)
 st.write(value)  # shows name on bar click and type+name+value on bar double click
 
 
