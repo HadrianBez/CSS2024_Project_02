@@ -5,11 +5,6 @@ Created on Wed Jan 31 12:19:51 2024
 @author: HadrianBezuidenhout
 """
 
-import pandas as pd
-import numpy as np
-import streamlit as st
-from streamlit import st_echarts
-
 @st.cache_data
 def load_data():
     # Create a text element and let the reader know the data is loading.
