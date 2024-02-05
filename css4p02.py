@@ -8,6 +8,7 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 from streamlit_echarts import st_echarts
+import altair as alt
 
 def load_data():
    # Create a text element and let the reader know the data is loading.
